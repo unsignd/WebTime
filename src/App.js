@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
 
-    var playAlert = setInterval(function() {
+    setInterval(function() {
         let today = new Date();
         let year = today.getFullYear(); // 년도
         let month = today.getMonth() + 1;
@@ -11,15 +11,15 @@ function App() {
         let minutes = today.getMinutes();
         let second = today.getSeconds();
 
-        if(month.toString().length == 1)
+        if(month.toString().length === 1)
             month = "0" + month.toString();
-        if(date.toString().length == 1)
+        if(date.toString().length === 1)
             date = "0" + date.toString();
-        if(hour.toString().length == 1)
+        if(hour.toString().length === 1)
             hour = "0" + hour.toString();
-        if(minutes.toString().length == 1)
+        if(minutes.toString().length === 1)
             minutes = "0" + minutes.toString();
-        if(second.toString().length == 1)
+        if(second.toString().length === 1)
             second = "0" + second.toString();
 
         document.getElementById('clock').innerText = hour + " : " + minutes + " : " + second;

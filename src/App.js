@@ -1,11 +1,12 @@
 import './App.css';
 
 function App() {
-    const playAlert = setInterval(function() {
+
+    var playAlert = setInterval(function() {
         let today = new Date();
-        let year = today.getFullYear();
+        let year = today.getFullYear(); // 년도
         let month = today.getMonth() + 1;
-        let date = today.getDate();
+        let date = today.getDate();  // 날짜
         let hour = today.getHours();
         let minutes = today.getMinutes();
         let second = today.getSeconds();
@@ -34,7 +35,7 @@ function App() {
         </div>
         <div style={{width: 1000, height: 500}}>
             <p className="date" id="date" />
-            <p className="clock" id="clock" />
+            <p className="clock" id="clock"
         </div>
         <p className="footer">Copyright 2021 ERRrOR, All rights reserved.</p>
       </body>

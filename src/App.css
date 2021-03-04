@@ -213,7 +213,7 @@ hr{
     user-select: none;
     font-size: 25px;
     position: absolute;
-    top: 37%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -223,7 +223,7 @@ hr{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 32px;
+    font-size: 30px;
     position: absolute;
     top : 42%;
     left: 50%;

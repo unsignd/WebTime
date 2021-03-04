@@ -192,7 +192,7 @@ hr{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 22px;
+    font-size: 18px;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -212,7 +212,7 @@ hr{
   }
 
   .footer{
-    font-size: 10px;
+    font-size: 8px;
     position: absolute;
     top: 95%;
     left: 50%;

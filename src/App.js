@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
 
-    var playAlert = setInterval(function() {
+    const playAlert = setInterval(function() {
         let today = new Date();
         let year = today.getFullYear(); // 년도
         let month = today.getMonth() + 1;
@@ -35,7 +35,7 @@ function App() {
         </div>
         <div style={{width: 1000, height: 500}}>
             <p className="date" id="date" />
-            <p className="clock" id="clock"
+            <p className="clock" id="clock" />
         </div>
         <p className="footer">Copyright 2021 ERRrOR, All rights reserved.</p>
       </body>

@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  color: #1f1f1f;
+  font-family: Y_Spotlight;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer{
+  font-size: 20px;
+  position: absolute;
+  top: 92.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.date{
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 60px;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.clock{
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 125px;
+  position: absolute;
+  top : 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+hr{
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  background-color: #1f1f1f;
+  border: 6px solid #1f1f1f;
+  width: 250px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f5f5f5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f5f5f5;
+  font-family: Y_Spotlight;
 }
 
-.App-link {
-  color: #61dafb;
+.Title{
+  text-align: center;
+  color: #1f1f1f;
+  margin-bottom: 775px;
+  font-size: 65px;
+  vertical-align: top;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+  font-family: 'Y_Spotlight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (min-width: 700px) and (max-width: 1500px){
+  .date{
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  to {
-    transform: rotate(360deg);
+
+  .clock{
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 60px;
+    position: absolute;
+    top : 42%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer{
+    font-size: 15px;
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-height: 500px) and (max-height: 750px){
+  .footer{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-height: 300px) and (max-height: 500px){
+  .footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media all and (min-height: 1500px){
+  .Title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #1f1f1f;
+    top: 0%;
+    font-size: 100px;
+    vertical-align: top;
+  }
+
+  hr{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    background-color: #1f1f1f;
+    border: 10px solid #1f1f1f;
+    width: 400px;
+  }
+
+  .date{
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 100px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .clock{
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 200px;
+    position: absolute;
+    top : 32.5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer{
+    font-size: 50px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media all and (max-width: 700px){
+  .date{
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 22px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .clock{
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 40px;
+    position: absolute;
+    top : 42%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer{
+    font-size: 10px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

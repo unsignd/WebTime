@@ -211,7 +211,7 @@ hr{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -223,7 +223,7 @@ hr{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 30px;
+    font-size: 26px;
     position: absolute;
     top : 39%;
     left: 50%;
@@ -239,7 +239,7 @@ hr{
   }
 
   a{
-    font-size: 20gipx;
+    font-size: 18px;
     position: absolute;
     top: 90%;
     left: 50%;

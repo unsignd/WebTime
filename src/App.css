@@ -237,4 +237,12 @@ hr{
     left: 50%;
     transform: translateX(-50%);
   }
+
+  a{
+    font-size: 10px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

@@ -71,6 +71,14 @@ hr{
   vertical-align: top;
 }
 
+a{
+  font-size: 40px;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @font-face {
   font-family: 'Y_Spotlight';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
@@ -119,12 +127,28 @@ hr{
     left: 50%;
     transform: translateX(-50%);
   }
+
+  a{
+    font-size: 30px;
+    position: absolute;
+    top: 86.5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-height: 300px) and (max-height: 500px){
   .footer{
     position: absolute;
-    top: 50%;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  a{
+    font-size: 25px;
+    position: absolute;
+    top: 86%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -181,6 +205,14 @@ hr{
     font-size: 50px;
     position: absolute;
     top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  a{
+    font-size: 100px;
+    position: absolute;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -245,10 +277,10 @@ hr{
     left: 50%;
     transform: translateX(-50%);
   }
-
-  a { text-decoration: none; color: black; }
-  a:visited { text-decoration: none; }
-  a:hover { text-decoration: none; }
-  a:focus { text-decoration: none; }
-  a:hover, a:active { text-decoration: none; }
 }
+
+a { text-decoration: none; color: black; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }

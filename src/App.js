@@ -37,7 +37,7 @@ function App() {
             <p className="date" id="date" />
             <p className="clock" id="clock" />
         </div>
-        <a href="https://time.errror.site"><i className="fab fa-github"></i></a>
+        <a href="https://github.com/ERRrOR404/WebClock"><i className="fab fa-github"></i></a>
         <p className="footer">Copyright 2021 ERRrOR, All rights reserved.</p>
       </body>
     </div>

@@ -213,7 +213,7 @@ hr{
     user-select: none;
     font-size: 25px;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -223,9 +223,9 @@ hr{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 30px;
+    font-size: 35px;
     position: absolute;
-    top : 42%;
+    top : 50%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -239,10 +239,16 @@ hr{
   }
 
   a{
-    font-size: 10px;
+    font-size: 25px;
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translateX(-50%);
   }
+
+  a { text-decoration: none; color: black; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:focus { text-decoration: none; }
+  a:hover, a:active { text-decoration: none; }
 }

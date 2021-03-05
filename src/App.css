@@ -223,9 +223,9 @@ hr{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 35px;
+    font-size: 30px;
     position: absolute;
-    top : 50%;
+    top : 39%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -239,7 +239,7 @@ hr{
   }
 
   a{
-    font-size: 25px;
+    font-size: 20gipx;
     position: absolute;
     top: 90%;
     left: 50%;

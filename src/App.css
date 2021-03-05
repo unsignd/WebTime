@@ -72,6 +72,8 @@ hr{
 }
 
 a{
+  text-decoration: none;
+  color: black;
   font-size: 40px;
   position: absolute;
   top: 88%;
@@ -279,7 +281,6 @@ a{
   }
 }
 
-a { text-decoration: none; color: black; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:focus { text-decoration: none; }

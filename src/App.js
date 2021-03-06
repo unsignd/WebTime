@@ -1,45 +1,83 @@
-import React, { Component } from 'react';
-import './App.css';
+import { useEffect, useState } from 'react'
 
-class App extends Component {
-    constructor() {
-        super();
+import styled, { createGlobalStyle } from 'styled-components'
 
-        this.state = {
-            timeString: null,
-            dateString: null
-        };
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px 0;
+    font-family: 'Y_Spotlight', sans-serif;
+    text-align: center;
+`
+
+const Title = styled.h1`
+    font-size: calc(2.75rem + 1.75vw);
+    margin: 1rem 0;
+`
+
+const NowDate = styled.p`
+    font-size: calc(1.25rem + 1vw);
+    margin: .5rem 0;
+`
+
+const NowTime = styled(NowDate)`
+    font-size: calc(3rem + 1vw);
+`
+
+const Line = styled.div`
+    margin: 0 auto;
+    width: 80%;
+    height: 12px;
+    background-color: #000;
+    border-radius: 10px;
+`
+
+const Style = createGlobalStyle`
+    @font-face {
+        font-family: 'Y_Spotlight';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
     }
+`
 
-    componentDidMount() {
+const App = () => {
+    const [dateString, setDateString] = useState(null)
+    const [timeString, setTimeString] = useState('')
+
+    useEffect(() => {
         setInterval(() => {
-            let today = new Date();
-            this.setState({
-                timeString: today.toLocaleTimeString(undefined, {
-                    hour12: false,
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit'
-                }),
-                dateString: today.toLocaleDateString()
-            });
-        }, 1000);
-    }
+            const date = new Date()
 
-    render() {
-        return (
-            <div className="App">
-                <h1 className="Title">Web Time</h1>
-                <hr/>
+            setDateString(date.toLocaleDateString())
+            setTimeString(date.toLocaleTimeString(undefined, {
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            }))
+        }, 1000)
+    }, [])
 
-                <p className="date" id="date">{this.state.dateString || ''}</p>
-                <p className="clock" id="clock">{this.state.dateString ? this.state.timeString : 'Calculating'}</p>
-
-                <a href="https://github.com/ERRrOR404/WebClock"><i className="fab fa-github"></i></a>
-                <p className="footer">Copyright {new Date().getFullYear()} ERRrOR, All rights reserved.</p>
+    return (
+        <Container>
+            <Style />
+            <div>
+                <Title>Web Time</Title>
+                <Line />
             </div>
-        )
-    }
+            <div>
+                <NowDate>{dateString ?? 'Calculating...'}</NowDate>
+                <NowTime>{timeString}</NowTime>
+            </div>
+            <div>
+                <p>Copyright {new Date().getFullYear()} ERRrOR, All rights reserved.</p>
+            </div>
+        </Container>
+    )
 }
 
-export default App;
+export default App

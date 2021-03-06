@@ -1,6 +1,6 @@
-body{
-  overflow-x: hidden;
+body {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 p{
@@ -10,6 +10,7 @@ p{
 
 .footer{
   font-size: 20px;
+  position: absolute;
   top: 92.5%;
   left: 50%;
   transform: translateX(-50%);
@@ -21,6 +22,7 @@ p{
   -webkit-user-select: none;
   user-select: none;
   font-size: 60px;
+  position: absolute;
   top: 27%;
   left: 50%;
   transform: translateX(-50%);
@@ -32,6 +34,7 @@ p{
   -webkit-user-select: none;
   user-select: none;
   font-size: 125px;
+  position: absolute;
   top : 30%;
   left: 50%;
   transform: translateX(-50%);
@@ -72,6 +75,7 @@ a{
   text-decoration: none;
   color: black;
   font-size: 40px;
+  position: absolute;
   top: 88%;
   left: 50%;
   transform: translateX(-50%);
@@ -84,7 +88,7 @@ a{
   font-style: normal;
 }
 
-@media (min-width: 700px) and (max-width: 1500px){
+@media (min-width: 500px) and (max-width: 1500px){
   .date{
     -ms-user-select: none;
     -khtml-user-select: none;
@@ -216,24 +220,24 @@ a{
   }
 }
 
-@media all and (max-width: 700px){
+@media all and (max-width: 500px){
   .Title{
     text-align: center;
     color: #1f1f1f;
     margin-bottom: 775px;
-    font-size: 45px;
+    font-size: 60px;
     vertical-align: top;
   }
 
   hr{
     position: absolute;
-    top: 100px;
+    top: 125px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50px;
     background-color: #1f1f1f;
     border: 4px solid #1f1f1f;
-    width: 150px;
+    width: 200px;
   }
 
   .date{
@@ -241,7 +245,7 @@ a{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 20px;
+    font-size: 36px;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -253,7 +257,7 @@ a{
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 26px;
+    font-size: 60px;
     position: absolute;
     top : 39%;
     left: 50%;
@@ -261,17 +265,17 @@ a{
   }
 
   .footer{
-    font-size: 5px;
+    font-size: 15px;
     position: absolute;
-    top: 95%;
+    top: 87%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   a{
-    font-size: 18px;
+    font-size: 25px;
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
   }

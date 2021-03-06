@@ -1,45 +1,47 @@
-import React, { Component } from 'react';
 import './App.css';
 
-class App extends Component {
-    constructor() {
-        super();
+function App() {
 
-        this.state = {
-            timeString: null,
-            dateString: null
-        };
-    }
+    setInterval(function() {
+        let today = new Date();
+        let year = today.getFullYear(); // 년도
+        let month = today.getMonth() + 1;
+        let date = today.getDate();  // 날짜
+        let hour = today.getHours();
+        let minutes = today.getMinutes();
+        let second = today.getSeconds();
 
-    componentDidMount() {
-        setInterval(() => {
-            let today = new Date();
-            this.setState({
-                timeString: today.toLocaleTimeString(undefined, {
-                    hour12: false,
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit'
-                }),
-                dateString: today.toLocaleDateString()
-            });
-        }, 1000);
-    }
+        if(month.toString().length === 1)
+            month = "0" + month.toString();
+        if(date.toString().length === 1)
+            date = "0" + date.toString();
+        if(hour.toString().length === 1)
+            hour = "0" + hour.toString();
+        if(minutes.toString().length === 1)
+            minutes = "0" + minutes.toString();
+        if(second.toString().length === 1)
+            second = "0" + second.toString();
 
-    render() {
-        return (
-            <div className="App">
-                <h1 className="Title">Web Time</h1>
-                <hr/>
+        document.getElementById('clock').innerText = hour + " : " + minutes + " : " + second;
+        document.getElementById('date').innerText = year + "." + month + "." + date;
+    }, 100);
 
-                <p className="date" id="date">{this.state.dateString || ''}</p>
-                <p className="clock" id="clock">{this.state.dateString ? this.state.timeString : 'Calculating'}</p>
-
-                <a href="https://github.com/ERRrOR404/WebClock"><i className="fab fa-github"></i></a>
-                <p className="footer">Copyright {new Date().getFullYear()} ERRrOR, All rights reserved.</p>
-            </div>
-        )
-    }
+  return (
+    <div className="App">
+      <body className="App-header">
+        <div>
+            <h1 className="Title">Web Time</h1>
+            <hr/>
+        </div>
+        <div style={{width: 1000, height: 500}}>
+            <p className="date" id="date" />
+            <p className="clock" id="clock" />
+        </div>
+        <a href="https://github.com/ERRrOR404/WebClock"><i className="fab fa-github"></i></a>
+        <p className="footer">Copyright 2021 ERRrOR, All rights reserved.</p>
+      </body>
+    </div>
+  );
 }
 
 export default App;

@@ -6,9 +6,7 @@ class App extends Component {
         super();
 
         this.state = {
-            hour: null,
-            minutes: null,
-            second: null,
+            timeString: null,
             dateString: null
         };
     }
@@ -17,9 +15,12 @@ class App extends Component {
         setInterval(() => {
             let today = new Date();
             this.setState({
-                hour: `0${today.getHours()}`.slice(-2),
-                minutes: `0${today.getMinutes()}`.slice(-2),
-                second: `0${today.getSeconds()}`.slice(-2),
+                timeString: today.toLocaleTimeString(undefined, {
+                    hour12: false,
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                }),
                 dateString: today.toLocaleDateString()
             });
         }, 1000);
@@ -32,7 +33,7 @@ class App extends Component {
                 <hr/>
 
                 <p className="date" id="date">{this.state.dateString || ''}</p>
-                <p className="clock" id="clock">{this.state.hour ? `${this.state.hour} : ${this.state.minutes} : ${this.state.second}` : 'Calculating'}</p>
+                <p className="clock" id="clock">{this.state.dateString ? this.state.timeString : 'Calculating'}</p>
 
                 <a href="https://github.com/ERRrOR404/WebClock"><i className="fab fa-github"></i></a>
                 <p className="footer">Copyright {new Date().getFullYear()} ERRrOR, All rights reserved.</p>

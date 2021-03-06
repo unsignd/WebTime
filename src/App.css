@@ -1,6 +1,6 @@
-body {
-  overflow-y: hidden;
+body{
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 p{
@@ -10,7 +10,6 @@ p{
 
 .footer{
   font-size: 20px;
-  position: absolute;
   top: 92.5%;
   left: 50%;
   transform: translateX(-50%);
@@ -22,7 +21,6 @@ p{
   -webkit-user-select: none;
   user-select: none;
   font-size: 60px;
-  position: absolute;
   top: 27%;
   left: 50%;
   transform: translateX(-50%);
@@ -34,7 +32,6 @@ p{
   -webkit-user-select: none;
   user-select: none;
   font-size: 125px;
-  position: absolute;
   top : 30%;
   left: 50%;
   transform: translateX(-50%);
@@ -75,7 +72,6 @@ a{
   text-decoration: none;
   color: black;
   font-size: 40px;
-  position: absolute;
   top: 88%;
   left: 50%;
   transform: translateX(-50%);
